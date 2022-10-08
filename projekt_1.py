@@ -52,8 +52,7 @@ are found in multiple limestone layers, which lie some
 represent several varieties of perch, as well as
 other freshwater genera and herring similar to those
 in modern oceans. Other fish such as paddlefish,
-garpike and stingray are also present. The example that
-ends with number 1000'''
+garpike and stingray are also present.'''
 ]
 
 # výběr textu k analýze
@@ -61,14 +60,6 @@ text_enter = int(input("Enter a number of text btw. 1 and 3 to select: "))
 
 if 1 <= text_enter <= 3:
     selected_text = TEXTS[text_enter - 1]
-    
-    # vyházet tečky, čárky a další nepísmenka a nečíslice, mezery a spol. nechat.
-    cleaned_text = ""
-    for character in selected_text:
-        if character.isalnum() or character.isspace():
-            cleaned_text += character
-    selected_text = cleaned_text
-
     print(line)
 
     # počet slov ve vybraném textu 
@@ -97,7 +88,6 @@ if 1 <= text_enter <= 3:
     print(f"There are {len(title_case_words)} titlecase words.") 
     print(f"There are {len(upper_words)} uppercase words.")          
     print(f"There are {len(low_words)} lowercase words.")
-
 
     # počet čísel(ne cifer)
     all_numbers = []
