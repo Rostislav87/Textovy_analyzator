@@ -62,6 +62,15 @@ if 1 <= text_enter <= 3:
     selected_text = TEXTS[text_enter - 1]
     print(line)
 
+    # vyházet tečky, čárky a další nepísmenka a nečíslice, mezery a spol. nechat.
+    cleaned_text = ""
+    for character in selected_text:
+        if character.isalnum() or character.isspace():
+            cleaned_text += character
+    selected_text = cleaned_text
+
+    print(line)
+    
     # počet slov ve vybraném textu 
     all_words = selected_text.split()
     
