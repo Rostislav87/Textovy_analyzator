@@ -1,3 +1,3 @@
 # Textový analyzátor
 
-Tady by mělo být nějaké pěkné vysvětlení, co to má dělat :)
+Program na analyzování textu. Program zjistí různé informace z předem vybraného textu.
