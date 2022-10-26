@@ -122,7 +122,7 @@ else:
 clean_words = []
 
 for words in all_words:
-    if words.isalpha():
+    if words.isalnum():
         clean_words.append(words)
 
 # délka jednotlivých slov
