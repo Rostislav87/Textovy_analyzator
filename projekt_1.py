@@ -100,7 +100,7 @@ for words in all_words:
         upper_words.append(words)
 
     elif words.islower():
-            low_words.append(words)
+        low_words.append(words)
 print(f"There are {len(title_case_words)} titlecase words.") 
 print(f"There are {len(upper_words)} uppercase words.")          
 print(f"There are {len(low_words)} lowercase words.")
